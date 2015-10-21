@@ -39,7 +39,7 @@
 (def result (reduce +
   (map-indexed word-score
     (sort #(.compareToIgnoreCase %1 %2)
-          (apply list (.split (.replace (slurp "C:\\Users\\53873\\Desktop\\p022_names.txt") "\"" "" ) ",")))))  )
+          (apply list (.split (.replace (slurp "resources\\p022_names.txt") "\"" "" ) ",")))))  )
 
 (defn -main
   ""
